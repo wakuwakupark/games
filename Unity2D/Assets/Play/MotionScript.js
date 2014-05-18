@@ -61,7 +61,7 @@ function Charging() {
 }
 
 function ReduceEnergy(){
-	if(count != 5){
+	if(count != 2){
 		count ++;
 		return;
 	}
@@ -90,6 +90,20 @@ function EndFlying() {
 function GameOver() {
 	targetGuiText.text = "Game Over";
 	status = 2;
+	
+		
+	score = 0.0;
+	energy = 0.0;
+	status = 0;
+	count = 0;
+	transform.position.y = -2.5;
+}
+
+function Shaking() {
+	
+	if(Input.acceleration.x*Input.acceleration.x + Input.acceleration.x*Input.acceleration.y + Input.acceleration.x*Input.acceleration.z > 1)
+		return true;
+	else return false;
 }
 
 function Update () {
@@ -98,14 +112,12 @@ function Update () {
 		case 0:
 			// charging
 			
-			if(Input.GetMouseButtonDown(0)){
-			//if(Input.GetTouch(0).phase == TouchPhase.Began){
-				//tap
+			//if(Input.GetMouseButtonDown(0)){
+			if(Shaking()){
 				if(!Charging())
 					GameOver();
-			}else if(Input.GetButtonDown("Jump")){
-			//if(Input.GetTouch(0).phase == TouchPhase.Moved){
-				//swipe
+			//}else if(Input.GetButtonDown("Jump")){
+			}else if(Input.GetMouseButtonDown(0)){
 				StartFlying();
 			}
 			
