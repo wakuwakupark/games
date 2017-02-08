@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="com.crawler.dao.impl.TestAdministratorDao" time="0.013" errors="2" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.40-b25"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/yahagihiroyuki/work/myself/02.EsCourt/05.batch/maven/crawler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="JP"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/yahagihiroyuki/work/myself/02.EsCourt/05.batch/maven/crawler"/>
+    <property name="java.runtime.version" value="1.8.0_40-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/3_/0616nnts5mq5fxzc2dg_gxqc0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/yahagihiroyuki/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2669524799117088934.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/yahagihiroyuki/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.2"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|oracle.com|*.oracle.com"/>
+    <property name="user.home" value="/Users/yahagihiroyuki"/>
+    <property name="user.timezone" value="Asia/Tokyo"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="yahagihiroyuki"/>
+    <property name="java.class.path" value="/Applications/JavaIDE/jee-neon/Eclipse.app/Contents/Eclipse/../../../../../../Users/yahagihiroyuki/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -gs /Users/yahagihiroyuki/.m2/setting.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ja"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_40"/>
+    <property name="java.ext.dirs" value="/Users/yahagihiroyuki/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/yahagihiroyuki/work/myself/02.EsCourt/05.batch/maven/crawler/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|oracle.com|*.oracle.com"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|oracle.com|*.oracle.com"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.crawler.dao.impl.TestAdministratorDao" name="getAll" time="0.012">
+    <error type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
+	at com.crawler.dao.impl.TestAdministratorDao.&lt;clinit&gt;(TestAdministratorDao.java:14)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: Exception [EclipseLink-30005] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.PersistenceUnitLoadingException
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: sun.misc.Launcher$AppClassLoader@6bc7c054
+Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [esCourt] failed.
+Internal Exception: Exception [EclipseLink-7250] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: [class com.crawler.model.Facility] uses a non-entity [class com.crawler.model.FacilityImage] as target entity in the relationship attribute [field facilityImages].
+	at org.eclipse.persistence.exceptions.PersistenceUnitLoadingException.exceptionSearchingForPersistenceResources(PersistenceUnitLoadingException.java:127)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:177)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.crawler.dao.Dao.&lt;clinit&gt;(Dao.java:13)
+	... 29 more
+Caused by: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [esCourt] failed.
+Internal Exception: Exception [EclipseLink-7250] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: [class com.crawler.model.Facility] uses a non-entity [class com.crawler.model.FacilityImage] as target entity in the relationship attribute [field facilityImages].
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createPredeployFailedPersistenceException(EntityManagerSetupImpl.java:1950)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1941)
+	at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:98)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:96)
+	... 33 more
+Caused by: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [esCourt] failed.
+Internal Exception: Exception [EclipseLink-7250] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: [class com.crawler.model.Facility] uses a non-entity [class com.crawler.model.FacilityImage] as target entity in the relationship attribute [field facilityImages].
+	at org.eclipse.persistence.exceptions.EntityManagerSetupException.predeployFailed(EntityManagerSetupException.java:230)
+	... 37 more
+Caused by: Exception [EclipseLink-7250] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: [class com.crawler.model.Facility] uses a non-entity [class com.crawler.model.FacilityImage] as target entity in the relationship attribute [field facilityImages].
+	at org.eclipse.persistence.exceptions.ValidationException.nonEntityTargetInRelationship(ValidationException.java:1378)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getReferenceDescriptor(RelationshipAccessor.java:568)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:484)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:210)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:143)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1564)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1853)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+	at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:585)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1865)
+	... 35 more
+</error>
+    <system-out>[EL Config]: metadata: 2017-02-06 16:46:33.004--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Job] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.039--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field users] is being defaulted to: class com.crawler.model.User.
+[EL Config]: metadata: 2017-02-06 16:46:33.04--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.MemberType] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.04--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field masters] is being defaulted to: class com.crawler.model.Master.
+[EL Config]: metadata: 2017-02-06 16:46:33.041--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field administrators] is being defaulted to: class com.crawler.model.Administrator.
+[EL Config]: metadata: 2017-02-06 16:46:33.041--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field users] is being defaulted to: class com.crawler.model.User.
+[EL Config]: metadata: 2017-02-06 16:46:33.042--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Password] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.044--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field administrator] is being defaulted to: class com.crawler.model.Administrator.
+[EL Config]: metadata: 2017-02-06 16:46:33.045--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field user] is being defaulted to: class com.crawler.model.User.
+[EL Config]: metadata: 2017-02-06 16:46:33.046--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.History] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.046--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field frame] is being defaulted to: class com.crawler.model.Frame.
+[EL Config]: metadata: 2017-02-06 16:46:33.047--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.User] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.047--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field waits] is being defaulted to: class com.crawler.model.Wait.
+[EL Config]: metadata: 2017-02-06 16:46:33.048--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field reserves] is being defaulted to: class com.crawler.model.Reserve.
+[EL Config]: metadata: 2017-02-06 16:46:33.049--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field passwords] is being defaulted to: class com.crawler.model.Password.
+[EL Config]: metadata: 2017-02-06 16:46:33.05--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field memberType] is being defaulted to: class com.crawler.model.MemberType.
+[EL Config]: metadata: 2017-02-06 16:46:33.051--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field job] is being defaulted to: class com.crawler.model.Job.
+[EL Config]: metadata: 2017-02-06 16:46:33.051--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Property] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.052--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Wait] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.052--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field reserveables] is being defaulted to: class com.crawler.model.Reservable.
+[EL Config]: metadata: 2017-02-06 16:46:33.052--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field notify] is being defaulted to: class com.crawler.model.Notify.
+[EL Config]: metadata: 2017-02-06 16:46:33.054--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field user] is being defaulted to: class com.crawler.model.User.
+[EL Config]: metadata: 2017-02-06 16:46:33.054--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field facility] is being defaulted to: class com.crawler.model.Facility.
+[EL Config]: metadata: 2017-02-06 16:46:33.054--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Queue] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.055--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field reserveable] is being defaulted to: class com.crawler.model.Reservable.
+[EL Config]: metadata: 2017-02-06 16:46:33.055--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field frame] is being defaulted to: class com.crawler.model.Frame.
+[EL Config]: metadata: 2017-02-06 16:46:33.055--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Facility] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.056--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field waits] is being defaulted to: class com.crawler.model.Wait.
+[EL Config]: metadata: 2017-02-06 16:46:33.056--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field courts] is being defaulted to: class com.crawler.model.Court.
+[EL Config]: metadata: 2017-02-06 16:46:33.058--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field facilityImages] is being defaulted to: class com.crawler.model.FacilityImage.
+[EL Config]: metadata: 2017-02-06 16:46:33.058--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field administrator] is being defaulted to: class com.crawler.model.Administrator.
+[EL Config]: metadata: 2017-02-06 16:46:33.059--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Frame] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.06--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field reserves] is being defaulted to: class com.crawler.model.Reserve.
+[EL Config]: metadata: 2017-02-06 16:46:33.06--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field histories] is being defaulted to: class com.crawler.model.History.
+[EL Config]: metadata: 2017-02-06 16:46:33.061--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field court] is being defaulted to: class com.crawler.model.Court.
+[EL Config]: metadata: 2017-02-06 16:46:33.061--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field queues] is being defaulted to: class com.crawler.model.Queue.
+[EL Config]: metadata: 2017-02-06 16:46:33.062--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Court] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.063--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field courtType] is being defaulted to: class com.crawler.model.CourtType.
+[EL Config]: metadata: 2017-02-06 16:46:33.063--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field frames] is being defaulted to: class com.crawler.model.Frame.
+[EL Config]: metadata: 2017-02-06 16:46:33.064--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field facility] is being defaulted to: class com.crawler.model.Facility.
+[EL Config]: metadata: 2017-02-06 16:46:33.064--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Reservable] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.065--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field wait] is being defaulted to: class com.crawler.model.Wait.
+[EL Config]: metadata: 2017-02-06 16:46:33.066--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field queues] is being defaulted to: class com.crawler.model.Queue.
+[EL Config]: metadata: 2017-02-06 16:46:33.066--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.CourtType] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.067--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field courts] is being defaulted to: class com.crawler.model.Court.
+[EL Config]: metadata: 2017-02-06 16:46:33.067--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Administrator] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.068--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field passwords] is being defaulted to: class com.crawler.model.Password.
+[EL Config]: metadata: 2017-02-06 16:46:33.069--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field memberType] is being defaulted to: class com.crawler.model.MemberType.
+[EL Config]: metadata: 2017-02-06 16:46:33.07--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field facilities] is being defaulted to: class com.crawler.model.Facility.
+[EL Config]: metadata: 2017-02-06 16:46:33.075--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Master] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.077--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field memberType] is being defaulted to: class com.crawler.model.MemberType.
+[EL Config]: metadata: 2017-02-06 16:46:33.078--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Notify] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.078--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field waits] is being defaulted to: class com.crawler.model.Wait.
+[EL Config]: metadata: 2017-02-06 16:46:33.079--ServerSession(1704064279)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.crawler.model.Reserve] is set to [FIELD].
+[EL Config]: metadata: 2017-02-06 16:46:33.081--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field user] is being defaulted to: class com.crawler.model.User.
+[EL Config]: metadata: 2017-02-06 16:46:33.082--ServerSession(1704064279)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field frame] is being defaulted to: class com.crawler.model.Frame.
+[EL Config]: metadata: 2017-02-06 16:46:33.082--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Job] is being defaulted to: Job.
+[EL Config]: metadata: 2017-02-06 16:46:33.115--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-02-06 16:46:33.117--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.118--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.MemberType] is being defaulted to: MemberType.
+[EL Config]: metadata: 2017-02-06 16:46:33.119--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.119--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [title] is being defaulted to: TITLE.
+[EL Config]: metadata: 2017-02-06 16:46:33.119--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Password] is being defaulted to: Password.
+[EL Config]: metadata: 2017-02-06 16:46:33.12--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2017-02-06 16:46:33.12--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.124--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.125--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.125--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.126--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [username] is being defaulted to: USERNAME.
+[EL Config]: metadata: 2017-02-06 16:46:33.126--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.History] is being defaulted to: History.
+[EL Config]: metadata: 2017-02-06 16:46:33.127--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.127--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [size] is being defaulted to: SIZE.
+[EL Config]: metadata: 2017-02-06 16:46:33.129--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.13--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.13--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.131--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.User] is being defaulted to: User.
+[EL Config]: metadata: 2017-02-06 16:46:33.132--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [birthday] is being defaulted to: BIRTHDAY.
+[EL Config]: metadata: 2017-02-06 16:46:33.132--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [address] is being defaulted to: ADDRESS.
+[EL Config]: metadata: 2017-02-06 16:46:33.134--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [gender] is being defaulted to: GENDER.
+[EL Config]: metadata: 2017-02-06 16:46:33.134--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.135--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [postcode] is being defaulted to: POSTCODE.
+[EL Config]: metadata: 2017-02-06 16:46:33.136--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2017-02-06 16:46:33.136--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.137--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.137--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [tel] is being defaulted to: TEL.
+[EL Config]: metadata: 2017-02-06 16:46:33.139--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.14--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2017-02-06 16:46:33.141--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Property] is being defaulted to: Property.
+[EL Config]: metadata: 2017-02-06 16:46:33.141--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.142--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [value] is being defaulted to: VALUE.
+[EL Config]: metadata: 2017-02-06 16:46:33.144--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [key] is being defaulted to: KEY.
+[EL Config]: metadata: 2017-02-06 16:46:33.144--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Wait] is being defaulted to: Wait.
+[EL Config]: metadata: 2017-02-06 16:46:33.145--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [succession] is being defaulted to: SUCCESSION.
+[EL Config]: metadata: 2017-02-06 16:46:33.146--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [distance] is being defaulted to: DISTANCE.
+[EL Config]: metadata: 2017-02-06 16:46:33.146--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.147--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [start] is being defaulted to: START.
+[EL Config]: metadata: 2017-02-06 16:46:33.147--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.147--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [size] is being defaulted to: SIZE.
+[EL Config]: metadata: 2017-02-06 16:46:33.148--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.148--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [end] is being defaulted to: END.
+[EL Config]: metadata: 2017-02-06 16:46:33.149--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [must] is being defaulted to: MUST.
+[EL Config]: metadata: 2017-02-06 16:46:33.149--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.15--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Queue] is being defaulted to: Queue.
+[EL Config]: metadata: 2017-02-06 16:46:33.152--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.155--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.155--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [reservable] is being defaulted to: RESERVABLE.
+[EL Config]: metadata: 2017-02-06 16:46:33.155--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.156--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.156--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Facility] is being defaulted to: Facility.
+[EL Config]: metadata: 2017-02-06 16:46:33.157--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [address] is being defaulted to: ADDRESS.
+[EL Config]: metadata: 2017-02-06 16:46:33.157--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.158--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [latitude] is being defaulted to: LATITUDE.
+[EL Config]: metadata: 2017-02-06 16:46:33.158--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [postcode] is being defaulted to: POSTCODE.
+[EL Config]: metadata: 2017-02-06 16:46:33.159--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [description] is being defaulted to: DESCRIPTION.
+[EL Config]: metadata: 2017-02-06 16:46:33.159--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [url] is being defaulted to: URL.
+[EL Config]: metadata: 2017-02-06 16:46:33.16--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.16--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-02-06 16:46:33.161--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.162--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.162--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [longitude] is being defaulted to: LONGITUDE.
+[EL Config]: metadata: 2017-02-06 16:46:33.163--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Frame] is being defaulted to: Frame.
+[EL Config]: metadata: 2017-02-06 16:46:33.163--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.164--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [start] is being defaulted to: START.
+[EL Config]: metadata: 2017-02-06 16:46:33.164--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.169--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [size] is being defaulted to: SIZE.
+[EL Config]: metadata: 2017-02-06 16:46:33.17--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [reserved] is being defaulted to: RESERVED.
+[EL Config]: metadata: 2017-02-06 16:46:33.171--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [price] is being defaulted to: PRICE.
+[EL Config]: metadata: 2017-02-06 16:46:33.171--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.172--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [end] is being defaulted to: END.
+[EL Config]: metadata: 2017-02-06 16:46:33.172--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.173--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Court] is being defaulted to: Court.
+[EL Config]: metadata: 2017-02-06 16:46:33.173--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.174--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.174--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-02-06 16:46:33.174--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.175--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.175--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Reservable] is being defaulted to: Reservable.
+[EL Config]: metadata: 2017-02-06 16:46:33.175--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.176--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [confirmed] is being defaulted to: CONFIRMED.
+[EL Config]: metadata: 2017-02-06 16:46:33.176--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.CourtType] is being defaulted to: CourtType.
+[EL Config]: metadata: 2017-02-06 16:46:33.176--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-02-06 16:46:33.177--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.177--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Administrator] is being defaulted to: Administrator.
+[EL Config]: metadata: 2017-02-06 16:46:33.178--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [address] is being defaulted to: ADDRESS.
+[EL Config]: metadata: 2017-02-06 16:46:33.178--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.178--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [postcode] is being defaulted to: POSTCODE.
+[EL Config]: metadata: 2017-02-06 16:46:33.179--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2017-02-06 16:46:33.179--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.179--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-02-06 16:46:33.179--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.18--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [tel] is being defaulted to: TEL.
+[EL Config]: metadata: 2017-02-06 16:46:33.18--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.181--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2017-02-06 16:46:33.181--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Master] is being defaulted to: Master.
+[EL Config]: metadata: 2017-02-06 16:46:33.182--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2017-02-06 16:46:33.182--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.182--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2017-02-06 16:46:33.182--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Notify] is being defaulted to: Notify.
+[EL Config]: metadata: 2017-02-06 16:46:33.183--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-02-06 16:46:33.183--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.183--ServerSession(1704064279)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.crawler.model.Reserve] is being defaulted to: Reserve.
+[EL Config]: metadata: 2017-02-06 16:46:33.184--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [deleted] is being defaulted to: DELETED.
+[EL Config]: metadata: 2017-02-06 16:46:33.184--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [created] is being defaulted to: CREATED.
+[EL Config]: metadata: 2017-02-06 16:46:33.185--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [modified] is being defaulted to: MODIFIED.
+[EL Config]: metadata: 2017-02-06 16:46:33.185--ServerSession(1704064279)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.215--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field administrator] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.216--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [administrator] is being defaulted to: ADMINISTRATOR_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.216--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field user] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.217--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [user] is being defaulted to: USER_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.217--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field frame] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.217--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [frame] is being defaulted to: FRAME_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.218--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field memberType] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.218--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field job] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.219--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [job] is being defaulted to: JOB_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.219--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field notify] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.219--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [notify] is being defaulted to: NOTIFY_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.22--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field user] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.22--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [user] is being defaulted to: USER_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.225--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field facility] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.225--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [facility] is being defaulted to: FACILITY_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.225--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field reserveable] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.226--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field frame] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.226--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [frame] is being defaulted to: FRAME_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.226--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field administrator] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.226--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [administrator] is being defaulted to: ADMINISTRATOR_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.227--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field court] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.227--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [court] is being defaulted to: COURT_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.227--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field courtType] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.227--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field facility] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.228--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [facility] is being defaulted to: FACILITY_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.228--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field wait] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.228--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [wait] is being defaulted to: WAIT_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.229--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field memberType] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.229--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field memberType] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.229--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field user] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.23--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [user] is being defaulted to: USER_ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.23--ServerSession(1704064279)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field frame] is being defaulted to: ID.
+[EL Config]: metadata: 2017-02-06 16:46:33.23--ServerSession(1704064279)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [frame] is being defaulted to: FRAME_ID.
+</system-out>
+  </testcase>
+  <testcase classname="com.crawler.dao.impl.TestAdministratorDao" name="getTokyo" time="0.001">
+    <error message="Could not initialize class com.crawler.dao.impl.TestAdministratorDao" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.crawler.dao.impl.TestAdministratorDao
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+</testsuite>

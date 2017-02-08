@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+	<persistence-unit name="esCourt" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.crawler.model.Administrator</class>
+		<class>com.crawler.model.CourtType</class>
+		<class>com.crawler.model.Court</class>
+		<class>com.crawler.model.Facility</class>
+		<class>com.crawler.model.Frame</class>
+		<class>com.crawler.model.History</class>
+		<class>com.crawler.model.Job</class>
+		<class>com.crawler.model.Master</class>
+		<class>com.crawler.model.MemberType</class>
+		<class>com.crawler.model.Notify</class>
+		<class>com.crawler.model.Password</class>
+		<class>com.crawler.model.Property</class>
+		<class>com.crawler.model.Queue</class>
+		<class>com.crawler.model.Reserve</class>
+		<class>com.crawler.model.User</class>
+		<class>com.crawler.model.Wait</class>
+
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:8889/es_court?useUnicode=yes&amp;characterEncoding=UTF-8" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="root" />
+
+			<!-- Logging -->
+			<property name="eclipselink.logging.level" value="WARNING" />
+			<property name="eclipselink.logging.timestamp" value="true" />
+			<property name="eclipselink.logging.session" value="true" />
+			<property name="eclipselink.logging.thread" value="true" />
+			<property name="eclipselink.logging.level.sql" value="WARNING"/>
+      		<property name="eclipselink.logging.parameters" value="true"/>
+			
+		</properties>
+	</persistence-unit>
+</persistence>
